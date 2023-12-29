@@ -77,7 +77,7 @@ export default function monacoEditorPlugin(options: IMonacoEditorOpts): Plugin {
   let resolvedConfig: ResolvedConfig;
 
   return {
-    name: 'vite-plugin-monaco-editor',
+    name: 'vite-plugin-monaco-editor-new',
     configResolved(getResolvedConfig) {
       resolvedConfig = getResolvedConfig;
     },
