@@ -1,13 +1,13 @@
 {
   "name": "vite-plugin-monaco-editor-new",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A vite plugin for the Monaco Editor",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run copy:cdn",
+    "prepublish": "npm run build && npm run copy:cdn",
     "test:build": "npm run build && vite build --config test/vite.config.js",
     "test:dev": "npm run build && vite --config test/vite.config.js",
     "test:preview": "vite preview --config test/vite.config.js",
